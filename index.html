@@ -22,6 +22,17 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    /* Ajuste para asegurar que la foto de perfil se vea bien */
+    .profile-avatar img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; 
+      object-fit: cover;
+      aspect-ratio: 1 / 1; /* Forza que sea cuadrada */
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -52,9 +63,9 @@
 
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/profile/fondo-trading.jpg" alt="Fondo Trading Financiero" data-aos="fade-in">
+      <img src="assets/img/fondo-finanzas.jpg" alt="Fondo Trading Financiero" data-aos="fade-in" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 1;">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="position: relative; z-index: 2;">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Fabián Cajavilca Tarazona</h2>
@@ -82,7 +93,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-avatar">
-                  <img src="assets/img/profile/fabian-perfil.jpg" class="img-fluid" alt="Fabián Cajavilca">
+                  <img src="assets/img/foto-fabian.jpg" class="img-fluid" alt="Fabián Cajavilca">
                 </div>
                 <h3>Fabián Cajavilca</h3>
                 <span class="role">Analista Cuantitativo & Inversiones</span>
